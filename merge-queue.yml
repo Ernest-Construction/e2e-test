@@ -17,4 +17,4 @@ jobs:
     - name: Run slow CI (emulated by a long sleep)
       run: |
         sleep 300
-        exit 0
+        exit 1

@@ -14,7 +14,7 @@ jobs:
         pwd
         tree -a -I '.git'
         git status
-    - name: Run slow CI (emulated by a long sleep)
-      run: |
-        sleep 300
-        exit 1
+    - name: Run CIs
+      run: |-
+        ./e2e1.sh
+        ./e2e2.sh

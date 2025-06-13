@@ -4,3 +4,6 @@ queue_rules:
       - check-success = validate-pr
     merge_conditions:
       - check-success = e2e
+merge_queue:
+  max_parallel_checks: 1
+  reset_on_external_merge: never

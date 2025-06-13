@@ -2,5 +2,6 @@ queue_rules:
   - name: default
     queue_conditions:
       - check-success = validate-pr
+      - check-success = e2e
     merge_conditions:
       - check-success = e2e

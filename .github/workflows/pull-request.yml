@@ -14,3 +14,11 @@ jobs:
         pwd
         tree -a -I '.git'
         git status
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run CIs
+      run: |-
+        ./e2e1.sh
+        ./e2e2.sh
+    
